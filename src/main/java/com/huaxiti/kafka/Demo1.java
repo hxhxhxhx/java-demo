@@ -39,6 +39,9 @@ public class Demo1 {
         System.out.println(f1);
         String round = String.valueOf(Math.round(3.00 * 100) / 100);
         System.out.println(round);
+
+
+
     }
 
 }

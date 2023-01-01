@@ -1,4 +1,4 @@
-package com.huaxiti.kafka;
+package com.huaxiti.泛型;
 
 public interface Animal {
 

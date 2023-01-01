@@ -1,6 +1,4 @@
-package com.huaxiti.kafka;
-
-import org.apache.kafka.common.protocol.types.Field;
+package com.huaxiti.泛型;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;

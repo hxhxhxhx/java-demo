@@ -8,11 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bigData" />
-        <module name="project" />
         <module name="database" />
+        <module name="java-ssm" />
         <module name="javaFoundationClass" />
+        <module name="project" />
+        <module name="java-sd" />
+        <module name="java-ss" />
         <module name="middleware" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-sd" target="8" />
+      <module name="java-ss" target="8" />
+      <module name="ssm" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

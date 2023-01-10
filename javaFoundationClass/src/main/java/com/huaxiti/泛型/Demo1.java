@@ -13,10 +13,10 @@ public class Demo1 {
 
     public static void runTest(Animal animal){
         animal.running();
-        if (animal instanceof Cat) {
-            Cat c = (Cat) animal;
-            c.running();
-        }
+//        if (animal instanceof Cat) {
+//            Cat c = (Cat) animal;
+//            c.running();
+//        }
 
         ArrayList<String> list = new ArrayList<>();
         list.add("1");

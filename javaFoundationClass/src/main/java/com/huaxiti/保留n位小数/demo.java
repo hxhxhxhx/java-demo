@@ -2,6 +2,7 @@ package com.huaxiti.保留n位小数;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class demo {
     public static void main(String[] args) {
@@ -20,5 +21,6 @@ public class demo {
         BigDecimal bg = new BigDecimal(f);
         double f1 = bg.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
         System.out.println(f1);
+        ArrayList<Object> objects = new ArrayList<>();
     }
 }

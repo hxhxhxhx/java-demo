@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.com.huaxiti.dao.WebDao">
+    <insert id="insertTeacher" >
+        insert into Teacher('name') values (#{name})
+    </insert>
+    <delete id="deleteTeacherById">
+        delete from Teacher where 'id' = #{id}
+    </delete>
+    <update id="updateTeacherById">
+        update table Teacher set 'name' = #{name} where 'id' = #{id}
+    </update>
+    <select id="findTeacherById" resultType="com.com.huaxiti.entity.Teacher">
+        select * from Teacher where 'id' = #{id}
+    </select>
+</mapper>

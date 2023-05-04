@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="java-ss" />
+        <module name="java-sd" />
+        <module name="java-ssm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-sd" target="8" />
+      <module name="java-ss" target="8" />
+      <module name="java-ssm" target="8" />
+      <module name="javaFrame" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

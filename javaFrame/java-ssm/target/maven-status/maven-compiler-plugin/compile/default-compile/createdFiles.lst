@@ -1,0 +1,7 @@
+com\huaxiti\service\WebService.class
+com\huaxiti\service\impl\WebServiceImpl.class
+com\huaxiti\entity\Teacher.class
+com\huaxiti\utils\ParamCheckUtil.class
+com\huaxiti\controller\webController.class
+com\huaxiti\dao\WebDao.class
+com\huaxiti\entity\Student.class

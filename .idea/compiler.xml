@@ -11,6 +11,7 @@
         <module name="database" />
         <module name="java-ssm" />
         <module name="javaFoundationClass" />
+        <module name="readWriteDataBase" />
         <module name="java-sd" />
         <module name="java-ss" />
         <module name="codeDiff" />

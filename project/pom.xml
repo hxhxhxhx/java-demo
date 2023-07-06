@@ -14,6 +14,7 @@
     <modules>
         <module>codeDiff</module>
         <module>readWriteDataBase</module>
+        <module>shardingSphere</module>
     </modules>
 
     <properties>

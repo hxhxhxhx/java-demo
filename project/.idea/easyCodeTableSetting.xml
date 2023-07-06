@@ -3,52 +3,6 @@
   <component name="EasyCodeTableSetting">
     <option name="tableInfoMap">
       <map>
-        <entry key="test_db.student">
-          <value>
-            <TableInfoDTO>
-              <option name="fullColumn">
-                <list>
-                  <ColumnInfoDTO>
-                    <option name="custom" value="false" />
-                    <option name="ext" value="{}" />
-                    <option name="name" value="id" />
-                    <option name="type" value="java.lang.String" />
-                  </ColumnInfoDTO>
-                  <ColumnInfoDTO>
-                    <option name="custom" value="false" />
-                    <option name="ext" value="{}" />
-                    <option name="name" value="name" />
-                    <option name="type" value="java.lang.String" />
-                  </ColumnInfoDTO>
-                  <ColumnInfoDTO>
-                    <option name="custom" value="false" />
-                    <option name="ext" value="{}" />
-                    <option name="name" value="addr" />
-                    <option name="type" value="java.lang.String" />
-                  </ColumnInfoDTO>
-                  <ColumnInfoDTO>
-                    <option name="custom" value="false" />
-                    <option name="ext" value="{}" />
-                    <option name="name" value="phone" />
-                    <option name="type" value="java.lang.String" />
-                  </ColumnInfoDTO>
-                  <ColumnInfoDTO>
-                    <option name="custom" value="false" />
-                    <option name="ext" value="{}" />
-                    <option name="name" value="clazz" />
-                    <option name="type" value="java.lang.String" />
-                  </ColumnInfoDTO>
-                </list>
-              </option>
-              <option name="name" value="Student" />
-              <option name="preName" value="" />
-              <option name="saveModelName" value="readWriteDataBase" />
-              <option name="savePackageName" value="com.huaxiti" />
-              <option name="savePath" value="./project/readWriteDataBase/src/main/java/com/huaxiti" />
-              <option name="templateGroupName" value="MybatisPlus" />
-            </TableInfoDTO>
-          </value>
-        </entry>
         <entry key="user_db_1.user_info_1">
           <value>
             <TableInfoDTO>
@@ -118,9 +72,79 @@
               </option>
               <option name="name" value="UserInfo1" />
               <option name="preName" value="" />
-              <option name="saveModelName" value="readWriteDataBase" />
+              <option name="saveModelName" value="shardingSphere" />
               <option name="savePackageName" value="com.huaxiti" />
-              <option name="savePath" value="./project/readWriteDataBase/src/main/java/com/huaxiti" />
+              <option name="savePath" value="./shardingSphere/src/main/java/com/huaxiti" />
+              <option name="templateGroupName" value="MybatisPlus" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="user_db_1.user_login_1">
+          <value>
+            <TableInfoDTO>
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="userId" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="userName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="password" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="loginTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="insertTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="updateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="deleteTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="deleted" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="sex" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="UserLogin1" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="shardingSphere" />
+              <option name="savePackageName" value="com.huaxiti" />
+              <option name="savePath" value="./shardingSphere/src/main/java/com/huaxiti" />
               <option name="templateGroupName" value="MybatisPlus" />
             </TableInfoDTO>
           </value>

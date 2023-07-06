@@ -1,0 +1,61 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.85.90:3306/user_db_1?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  main:
+    # 一个实体类对应两张表，覆盖
+    allow-bean-definition-overriding: true
+  # sharding-jdbc 水平分库分表策略
+  # 配置数据源，给数据源起别名
+  # 水平分库需要配置多个数据库
+  sharding-sphere:
+    datasource:
+      names: master1,master2
+      master1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.85.90:3306/user_db_1?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+        username: root
+        password: root
+      master2:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.85.90:3306/user_db_2?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT&allowPublicKeyRetrieval=true
+        username: root
+        password: root
+    # 打开 sql 输出日志
+    props:
+      sql.show: true
+    sharding:
+      tables:
+        user_info:
+          # 指定数据库分布的情况和数据表分布的情况
+          actual-data-nodes: master${1..2}.user_db_${1..2}
+          # 指定 user 表里面主键 user_id 的生成策略 SNOWFLAKE
+          key-generator:
+            column: user_id
+            type: SNOWFLAKE
+          # 指定分表策略    约定 sex 值偶数添加到 user_1 表，如果 sex 是奇数添加到 user_2 表
+          table-strategy:
+            inline:
+              sharding-column: user_id
+              algorithm-expression: user_login_${user_id % 2 + 1}
+          # 指定分库策略    约定 user_id 值偶数添加到 m1 库，如果 user_id 是奇数添加到 m2 库
+          # 指定只有user表的user_id
+          database-strategy:
+            inline:
+              sharding-column: user_id
+              algorithm-expression: user_db_${user_id % 2 + 1}
+      # 默认写法（所有的表的user_id）
+#      default-database-strategy:
+#        inline:
+#          sharding-column: user_id
+#          algorithm-expression: master${user_id % 2 + 1}
+
+server:
+  port: 8004
+
+
